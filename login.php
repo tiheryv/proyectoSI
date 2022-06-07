@@ -32,17 +32,19 @@ if (isset($_POST['submit'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<div class="container" style="margin-top: 100px;">
+<div class="container" style="background: #3D315B; margin-top: 100px;">
     <div class="row justify-content-center">
         <div class="col-md-6 col-md-offset-3" align="center">
-            <img src="images/img.png"><br><br>
+            <img src="images/LoginImage.png"><br><br>
 
             <?php if($msg != "") echo $msg . "<br><br>"; ?>
 
             <form method="post" action="login.php">
-                <input class="form-control" name="correo" placeholder="Correo..."><br>
-                <input class="form-control" minlength="5" name="contrasenia" type="password" placeholder="Contraseña..."><br>
-                <input class="btn btn-primary" name="submit" type="submit" value="Entrar..."><br>
+                <label>Email</label>
+                <input class="form-control form-control-lg" name="correo" placeholder="Inserte Email"><br>
+                <label>Password</label>
+                <input class="form-control form-control-lg" minlength="5" name="contrasenia" type="password" placeholder="Inserte su password"><br>
+                <input class="btn btn-success" name="submit" type="submit" value="Entrar..."><br>
 
             </form>
 </body>
