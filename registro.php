@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
         crossorigin="anonymous">
 </head>
 <body>
-<div class="container" style="margin-top: 100px;">
+<div class="container" style="margin-top: 100px; background:black;">
     <div class="row justify-content-center">
         <div class="col-md-6 col-md-offset-3" align="center">
             <img src="images/img.png"><br><br>
@@ -43,10 +43,10 @@ if (isset($_POST['submit'])) {
             <?php if($msg != "") echo $msg . "<br><br>"; ?>
 
             <form method="post" action="registro.php">
-                <input class="form-control" minlength="3" name="nombre" placeholder="Ingrese su nombre..."><br>
-                <input class="form-control" name="correo" placeholder="Ingrese su correo..."><br>
-                <input class="form-control" minlength="5" name="contrasenia" type="password" placeholder="Contraseña..."><br>
-                <input class="form-control" minlength="5" name="cContrasenia" type="password" placeholder="Confirmar contraseña..."><br>
+                <input class="form-control form-control-lg" minlength="3" name="nombre" placeholder="Ingrese su nombre..."><br>
+                <input class="form-control form-control-lg" name="correo" placeholder="Ingrese su correo..."><br>
+                <input class="form-control form-control-lg" minlength="5" name="contrasenia" type="password" placeholder="Contraseña..."><br>
+                <input class="form-control form-control-lg" minlength="5" name="cContrasenia" type="password" placeholder="Confirmar contraseña..."><br>
                 <input class="btn btn-secondary" name="submit" type="submit" value="Registrarse"><br>
             </form>
 </body>

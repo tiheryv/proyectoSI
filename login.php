@@ -12,11 +12,11 @@ if (isset($_POST['submit'])) {
     if ($sql->num_rows > 0) {
         $data = $sql->fetch_array();
         if(password_verify($contrasenia, $data['contrasenia'])) {
-            $msg ="Has entrado";
+            $msg ="Login exitoso";
         }else
-            $msg = "Por favor checa tus datos";
+            $msg = "Por favor verifica la contraseña";
     }else
-        $msg = "Por favor checa tus datos";
+        $msg = "Por favor verifica el usuario o la contraseña";
 
 }
 ?>
